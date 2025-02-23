@@ -1,1 +1,22 @@
 /*  your css code here. If applicable */
+#container {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* 🎨 Pseudo-element: Before */
+#container::before {
+  content: "Special Text Before | ";
+  color: #f00;
+  font-size: 20px;
+}
+
+/* 🎨 Pseudo-element: After */
+#container::after {
+  content: " | Special Text After";
+  color: #f00;
+  font-size: 20px;
+}
