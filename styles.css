@@ -1,22 +1,28 @@
 /*  your css code here. If applicable */
+/* 🌟 Container Styling */
 #container {
   margin: 20px;
-  padding: 10px;
-  border: 1px solid #000;
   font-size: 18px;
   text-align: center;
+  position: relative;
 }
 
 /* 🎨 Pseudo-element: Before */
 #container::before {
-  content: "Special Text Before | ";
+  content: "Before Element";
   color: #f00;
   font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* 🎨 Pseudo-element: After */
 #container::after {
-  content: " | Special Text After";
+  content: "After Element";
   color: #f00;
   font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
